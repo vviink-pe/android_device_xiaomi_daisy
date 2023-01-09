@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-$(call inherit-product, vendor/xiaomi/tissot/tissot-vendor.mk)
+$(call inherit-product, vendor/xiaomi/daisy/daisy-vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
 
 # Overlay
@@ -73,14 +73,14 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-service
 
 # Properties
--include device/xiaomi/tissot/prop.mk
+-include device/xiaomi/daisy/prop.mk
 
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.goodix.sh \
     init.recovery.qcom.rc \
     init.recovery.qcom.usb.rc \
-    init.tissot.rc
+    init.daisy.rc
 
 # Sensors
 PRODUCT_COPY_FILES += \
